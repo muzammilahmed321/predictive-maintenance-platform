@@ -1,0 +1,2 @@
+# predictive-maintenance-platform
+
