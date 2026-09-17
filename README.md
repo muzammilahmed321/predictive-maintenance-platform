@@ -416,7 +416,7 @@ Base URL: `http://127.0.0.1:8000`
 ![Contributor Banner](https://capsule-render.vercel.app/api?type=rect&color=0:151f38,100:0b1220&height=3)
 
 **Muzammil Ahmed**
-*AI & Computer Science (Specialization in AI) Student*
+*Computer Science (Specialization in AI) Student*
 
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/muzammilahmed321)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
