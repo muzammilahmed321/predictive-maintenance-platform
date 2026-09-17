@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🏭 Predictive Maintenance Platform
+![Banner](https://capsule-render.vercel.app/api?type=waving&color=0:0b1220,100:3b82f6&height=180&section=header&text=Predictive%20Maintenance%20Platform&fontSize=38&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI-Powered%20Machine%20Failure%20Prediction%20System&descAlignY=58&descSize=16)
 
-### AI-Powered Machine Failure Prediction System
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=3B82F6&center=true&vCenter=true&width=650&lines=Predicting+machine+failures+before+they+happen...;XGBoost+%2B+FastAPI+%2B+React+%E2%9A%A1;End-to-end+ML+Engineering+Portfolio+Project)](https://git.io/typing-svg)
 
 ![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
@@ -16,7 +16,7 @@
 
 **An end-to-end machine learning system that predicts industrial machine failures before they happen — combining a tuned XGBoost model, a FastAPI backend, and a real-time React dashboard.**
 
-[Overview](#-overview) • [Demo](#-live-demo-flow) • [Architecture](#-architecture) • [Model Performance](#-model-performance) • [Setup](#-getting-started) • [API](#-api-reference)
+[Overview](#-overview) • [Demo](#-live-demo-flow) • [Architecture](#-architecture) • [Model Performance](#-model-performance) • [Screenshots](#-screenshots) • [Setup](#-getting-started) • [API](#-api-reference)
 
 </div>
 
@@ -138,6 +138,22 @@ This project uses the **[AI4I 2020 Predictive Maintenance Dataset](https://archi
 
 > ⚠️ **Note:** This dataset is synthetic, designed to mimic real factory sensor behavior. This project demonstrates the *engineering pipeline* end-to-end rather than claiming production deployment on live factory data.
 
+### 📊 Exploratory Data Analysis
+
+<div align="center">
+
+| Feature Distributions | Failure vs Feature Boxplots |
+|:---:|:---:|
+| ![EDA 1](docs/eda.png) | ![EDA 2](docs/eda2.png) |
+
+**Correlation Heatmap**
+
+![Correlation Heatmap](docs/corelation%20heatmap.png)
+
+</div>
+
+Key takeaway: **Torque** and **Tool Wear** show the clearest separation between failed and healthy machines, and **Rotational Speed** is strongly inversely correlated with Torque (-0.88) — both align with real-world mechanical stress physics.
+
 ---
 
 ## 📊 Model Performance
@@ -243,7 +259,12 @@ predictive-maintenance-platform/
 │   └── package.json
 │
 ├── docs/
-│   └── screenshots/
+│   ├── eda.png
+│   ├── eda2.png
+│   ├── corelation heatmap.png
+│   ├── ui1.jpeg
+│   ├── ui2.jpeg
+│   └── ui3.jpeg
 │
 └── README.md
 ```
@@ -344,35 +365,26 @@ Base URL: `http://127.0.0.1:8000`
 
 ---
 
-## 🎨 Dashboard Preview
+## 🎨 Screenshots
 
-```
-┌──────────────────────────────────────────────────────┐
-│  Predictive Maintenance          Dashboard   Predict  │
-├──────────────────────────────────────────────────────┤
-│                                                        │
-│  Machine Health Dashboard                             │
-│  Live overview of 21 machines across the plant        │
-│                                                        │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐ ┌─────────┐     │
-│  │ Total   │ │ Healthy │ │ At Risk │ │Critical │     │
-│  │   21    │ │   15    │ │    3    │ │    3    │     │
-│  └─────────┘ └─────────┘ └─────────┘ └─────────┘     │
-│                                                        │
-│  RISK OVERVIEW                                        │
-│  ┌───────────────────┐  ┌───────────────────┐        │
-│  │   🍩 Donut Chart   │  │   📊 Bar Chart     │        │
-│  └───────────────────┘  └───────────────────┘        │
-│                                                        │
-│  ALL MACHINES                                          │
-│  ┌────────────────────────────────────────────────┐  │
-│  │ M-1001 │ L │ 298K │ 42Nm │ 20min │  View →     │  │
-│  │ M-1002 │ M │ 301K │ 55Nm │150min │  View →     │  │
-│  └────────────────────────────────────────────────┘  │
-└──────────────────────────────────────────────────────┘
-```
+<div align="center">
 
-*(Add real screenshots to `docs/screenshots/` and embed them here with `![Dashboard](docs/screenshots/dashboard.png)`)*
+### Dashboard — KPIs & Risk Distribution
+![Dashboard Overview](docs/ui1.jpeg)
+
+*Live KPI cards, a donut chart for risk share, and a bar chart comparing machine counts by status.*
+
+### All Machines Table
+![Machines Table](docs/ui2.jpeg)
+
+*Every machine — dummy-generated or user-predicted — listed with live sensor readings and a one-click "View" for full details.*
+
+### Predict — Real-Time Risk Prediction
+![Predict UI](docs/ui3.jpeg)
+
+*Enter sensor readings manually and get an instant failure probability, prediction, and color-coded risk level.*
+
+</div>
 
 ---
 
@@ -401,10 +413,12 @@ Base URL: `http://127.0.0.1:8000`
 
 <div align="center">
 
-**Muzammil Ahmed**
-*Computer Science (Specialization in AI) Student*
+![Contributor Banner](https://capsule-render.vercel.app/api?type=rect&color=0:151f38,100:0b1220&height=3)
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](#)
+**Muzammil Ahmed**
+*AI & Computer Science (Specialization in AI) Student*
+
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/muzammilahmed321)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](#)
 
 </div>
@@ -425,5 +439,9 @@ This project is licensed under the MIT License — feel free to use, modify, and
 <div align="center">
 
 **⭐ If this project helped you learn something, consider giving it a star!**
+
+![Visitor Count](https://komarev.com/ghpvc/?username=muzammilahmed321&label=Profile%20Views&color=3b82f6&style=flat-square)
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:0b1220,100:3b82f6&height=100&section=footer)
 
 </div>
