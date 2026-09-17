@@ -1,0 +1,93 @@
+.machine-details h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  animation: fadeInUp 0.5s ease both;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: var(--surface);
+  padding: 18px;
+  transition: background var(--transition);
+}
+
+.detail-item:hover {
+  background: var(--surface-hover);
+}
+
+.detail-label {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+.detail-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.prediction-card {
+  margin-top: 22px;
+  padding: 22px;
+  border-radius: var(--radius);
+  max-width: 420px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  animation: fadeInUp 0.4s ease both;
+}
+
+.prediction-card h3 {
+  margin: 0 0 10px;
+  font-size: 19px;
+  color: var(--text-primary);
+}
+
+.prediction-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  margin: 4px 0;
+  font-variant-numeric: tabular-nums;
+}
+
+.risk-low {
+  border-left-color: var(--success);
+}
+.risk-low h3 {
+  color: var(--success);
+}
+
+.risk-medium {
+  border-left-color: var(--warning);
+}
+.risk-medium h3 {
+  color: var(--warning);
+}
+
+.risk-high {
+  border-left-color: var(--danger);
+  animation: fadeInUp 0.4s ease both, pulse-glow 1.8s ease-in-out infinite;
+  --glow-color: var(--danger-glow);
+}
+.risk-high h3 {
+  color: var(--danger);
+}

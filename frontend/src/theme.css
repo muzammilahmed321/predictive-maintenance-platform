@@ -1,0 +1,80 @@
+:root {
+  --bg-primary: #0b1220;
+  --bg-secondary: #111a2e;
+  --surface: #151f38;
+  --surface-hover: #1c2a4a;
+  --border: #253352;
+  --border-glow: #2d4270;
+
+  --accent: #3b82f6;
+  --accent-bright: #60a5fa;
+  --accent-glow: rgba(59, 130, 246, 0.35);
+
+  --success: #22c55e;
+  --success-glow: rgba(34, 197, 94, 0.35);
+  --warning: #f59e0b;
+  --warning-glow: rgba(245, 158, 11, 0.35);
+  --danger: #ef4444;
+  --danger-glow: rgba(239, 68, 68, 0.4);
+
+  --text-primary: #e5edff;
+  --text-secondary: #8ea0c9;
+  --text-muted: #5c6c8f;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 0%, rgba(59, 130, 246, 0.08), transparent 40%),
+    radial-gradient(circle at 85% 20%, rgba(34, 197, 94, 0.05), transparent 35%),
+    var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: 28px 40px 60px;
+  max-width: 1240px;
+  margin: 0 auto;
+  animation: fadeInUp 0.5s ease both;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 var(--glow-color, var(--danger-glow)); }
+  50% { box-shadow: 0 0 0 8px transparent; }
+}
+
+::selection {
+  background: var(--accent-glow);
+  color: var(--text-primary);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-glow);
+  border-radius: 8px;
+}

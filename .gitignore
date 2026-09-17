@@ -1,0 +1,103 @@
+# ==========================================
+# PYTHON
+# ==========================================
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python build files
+*.egg-info/
+build/
+dist/
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+
+# ==========================================
+# JUPYTER NOTEBOOKS
+# ==========================================
+
+# Keep .ipynb files
+# Ignore only Jupyter's temporary checkpoint folders
+.ipynb_checkpoints/
+
+
+# ==========================================
+# ENVIRONMENT & SECRETS
+# ==========================================
+
+.env
+.env.*
+!.env.example
+
+
+# ==========================================
+# NODE / REACT
+# ==========================================
+
+# Dependencies
+node_modules/
+
+# React / Vite build output
+frontend/dist/
+frontend/build/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# ==========================================
+# MACHINE LEARNING
+# ==========================================
+
+# Trained model files
+*.pkl
+*.joblib
+
+# Uncomment these if you have large datasets
+# *.csv
+# *.xlsx
+# datasets/
+# data/
+
+
+# ==========================================
+# IDE
+# ==========================================
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# IntelliJ / PyCharm
+.idea/
+
+
+# ==========================================
+# OPERATING SYSTEM
+# ==========================================
+
+.DS_Store
+Thumbs.db
+
+
+# ==========================================
+# LOGS
+# ==========================================
+
+*.log
+logs/

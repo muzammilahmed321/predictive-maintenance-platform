@@ -1,0 +1,79 @@
+.machine-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px;
+  transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+}
+
+.machine-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--border-glow);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.machine-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.machine-card-header h4 {
+  font-size: 15.5px;
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 700;
+}
+
+.machine-type {
+  background: rgba(59, 130, 246, 0.15);
+  color: var(--accent-bright);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  padding: 2px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.machine-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.machine-stat {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+}
+
+.stat-value {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.machine-card-link {
+  display: block;
+  text-align: center;
+  padding: 9px;
+  background: rgba(59, 130, 246, 0.12);
+  color: var(--accent-bright);
+  text-decoration: none;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  border-radius: var(--radius-sm);
+  font-size: 13.5px;
+  font-weight: 600;
+  transition: all var(--transition);
+}
+
+.machine-card-link:hover {
+  background: var(--accent);
+  color: white;
+}
